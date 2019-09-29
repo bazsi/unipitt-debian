@@ -1,0 +1,30 @@
+Source: unipitt
+Section: devel
+Priority: optional
+Maintainer: Balazs Scheidler <bazsi77@gmail.com>
+Build-Depends: debhelper (>= 10),
+               dh-golang,
+               golang-any,
+               golang-github-cenkalti-backoff-dev,
+               golang-github-eclipse-paho.mqtt.golang-dev,
+               golang-yaml.v2-dev
+Standards-Version: 4.1.1
+Homepage: https://github.com/mhemeryck/unipitt
+XS-Go-Import-Path: github.com/mhemeryck/unipitt
+Testsuite: autopkgtest-pkg-go
+
+Package: unipitt
+Architecture: any
+Built-Using: ${misc:Built-Using}
+Depends: ${shlibs:Depends},
+         ${misc:Depends}
+Description: Poll and push out event for unipi neuron platform
+ unipitt GoDoc (https://godoc.org/github.com/mhemeryck/unipitt) Go Report
+ Card (https://goreportcard.com/report/github.com/mhemeryck/unipitt)
+ Build Status (https://travis-ci.com/mhemeryck/unipitt) Coverage Status
+ (https://coveralls.io/github/mhemeryck/unipitt?branch=master)
+ .
+ Poll and push out events for unipi neuron platform over MQTT.
+ .
+ Why unipiTT? I don't know, I've sort of ran out of good names
+ ¯_(˶′◡‵˶)_/¯.

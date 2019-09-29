@@ -1,0 +1,15 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: unipitt
+Source: https://github.com/mhemeryck/unipitt
+Files-Excluded: vendor Godeps/_workspace
+
+Files: *
+Copyright: 2018 Martijn Hemeryck
+License: GPL-3.0
+
+Files: debian/*
+Copyright: 2019 Balazs Scheidler <bazsi77@gmail.com>
+License: GPL-3.0
+Comment: Debian packaging is licensed under the same terms as upstream
+
+License: GPL-3.0
